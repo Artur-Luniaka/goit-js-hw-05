@@ -1,9 +1,6 @@
 const getUserNames = users => {
-  let userNamesOnly = []
-  for (let user of users) {
-    userNamesOnly.push(user.name)
-  }
-  return userNamesOnly
+  const userNamesArr = users.map(user => user.name);
+  return userNamesArr
 }
 console.log(
   getUserNames([
